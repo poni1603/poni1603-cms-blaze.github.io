@@ -50,6 +50,12 @@
       opacity: 1;
       transform: none; 
    }
+   
+   .video {
+      margin-right: auto;
+      margin-left: 5px;
+      width: 80vw;
+   }
 }
 
 @media(min-width: 600px) {
