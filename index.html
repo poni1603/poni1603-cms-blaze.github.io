@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CMS</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://unpkg.com/@blaze/css@12.0.0/dist/blaze/blaze.css">
+	<script type="module" src="https://unpkg.com/@blaze/atoms@12.0.0/dist/blaze-atoms/blaze-atoms.esm.js"></script>
+	<script nomodule="" src="https://unpkg.com/@blaze/atoms@12.0.0/dist/blaze-atoms/blaze-atoms.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+	<style>
+		@font-face {
+			font-family: 'Durik';
+			src: url('durik-Regular.woff2') format('woff2'), url('durik-Regular.woff') format('woff');
+			font-weight: 400;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'LIBRARY 3 AM';
+			src: url('fonts/LIBRARY3AM.woff2') format('woff2'), url('fonts/LIBRARY3AM.woff') format('woff');
+			font-weight: 400;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Monitorica';
+			src: url('fonts/Monitorica.woff2') format('woff2'), url('fonts/Monitorica.woff') format('woff');
+			font-weight: 400;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'MADE Evolve Sans EVO';
+			src: url('fonts/MADEEvolveSansEVO-Thin.woff2') format('woff2'), url('fonts/MADEEvolveSansEVO-Thin.woff') format('woff');
+			font-weight: 200;
+			font-style: normal;
+		}
+
+	</style>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+	<header>
+
+		<div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0;background: #050f13;color: white;font-family: 'Monitorica', sans-serif; width: 300px; font-size: 20px; border-color: skyblue; border-left-width: 3px;" id="rightMenu">
+		  	<button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">Закрыть <i class="fa-solid fa-arrow-right"></i></button>
+		  	
+		  	<button role="menuitem" class="c-card__control "><p><a href="#part1">Как работает CMS</a></p></button>
+		  	<button role="menuitem" class="c-card__control"><p><a href="#part2">Возможности CMS</a></p></button>
+		  	<button role="menuitem" class="c-card__control"><p><a href="#part3">Преимущества использования</a></p></button>
+		  	<button role="menuitem" class="c-card__control"><p><a href="#part4">Бесплатные Vs Платные</a></p></button>
+		</div>
+
+		<div class="w3-teal">
+		  	<button class="sticky w3-button w3-teal w3-xlarge w3-right" onclick="openRightMenu()"><i class="fa-solid fa-bars"></i>
+			</button>
+		</div>
+
+		<div class="logo">
+			<a href="index.html"><img class="img_logo" src="img/cms2.png" widht="355" height="99" alt=""></a>
+		</div>
+
+	</header>
+
+	<nav>
+	    <ul class="topmenu">
+	        <li><a href="index.html">Что такое CMS?</a></li>
+	    	<li><a href="free.html">Бесплатные</a>
+	       		<ul class="submenu">
+				    <li><a href="wordpress.html">WordPress</a></li>
+				    <li><a href="joomla.html">Joomla</a></li>
+				    <li><a href="opencart.html">OpenCart</a></li>
+				    <li><a href="drupal.html">Drupal</a></li>
+				</ul>
+	    	</li>
+		    <li><a href="pay.html">Платные</a>
+		     	<ul class="submenu">
+		    		<li><a href="onec.html">1C: Битрикс</a></li>
+		     		<li><a href="umicms.html">Umi.CMS</a></li>
+				    <li><a href="netcat.html">NetCat</a></li>
+				    <li><a href="dle.html">DLE</a></li>
+		     	</ul>
+	    	</li>
+	    </ul>
+	</nav>
+
+	<main>
+		<blaze-back-to-top position="center">
+		 	<button class="c-button c-button--info">Наверх</button>
+		</blaze-back-to-top>
+
+		<div class="start">
+			<div class="o-container o-container--medium">
+				<p>CMS (Content Management System) — это система управления, движок, платформа или конструктор, который позволяет управлять содержимым сайта.</p>
+			</div>
+		</div>
+		<div class="text-home-page">
+			<div class="o-container o-container--medium">
+				<p><a name="part1"></a></p>
+				<h2>Как работает CMS и как ею пользоваться?</h2> 
+				<p class="c-paragraph">CMS предоставляет графический пользовательский интерфейс с инструментами для создания, редактирования и публикации веб-контента без необходимости написания кода с нуля.</p>
+				<p class="c-paragraph">CMS состоит из двух компонентов: приложения управления контентом (CMA) и приложения доставки контента (CDA).
+				</p>
+				<ol class="border">
+				    <li>- CMA - это графический пользовательский интерфейс, который позволяет пользователям проектировать, создавать, изменять и удалять контент с веб-сайта без знания HTML.</li>
+				    <li>Компонент CDA предоставляет серверные службы, поддерживающие управление и доставку содержимого после того, как пользователь создаст его в CMA.</li>
+				</ol>
+			</div>
+		</div>
+
+		<div class="text-home-page">
+			<div class="o-container o-container--medium">
+				<p><a name="part2"></a></p>
+				<h2>Возможности CMS</h2>
+				<p class="c-paragraph">Функции могут варьироваться в зависимости от различных предложений CMS, но основные функции включают в себя:
+				</p>
+			</div>
+
+			<ol class="bullet">
+			  	<li>
+			  		<h3>Интуитивное индексирование, поиск и извлечение.</h3>
+			  		<p>Эти функции индексируют все данные для легкого доступа с помощью функций поиска и позволяют пользователям выполнять поиск по таким атрибутам, как даты публикации, ключевые слова или автор.</p>
+			  	</li>
+			  	<li>
+			  		<h3>Управление форматом.</h3>
+			  		<p>Это помогает преобразовывать отсканированные бумажные документы и устаревшие электронные документы в документы HTML или PDF.</p>
+			  	</li>
+			  	<li>
+			  		<h3>Особенности ревизии.</h3>
+			  		<p>Эти функции позволяют обновлять и редактировать содержимое после первоначальной публикации. Контроль версий также отслеживает любые изменения, которые пользователи вносят в файлы.</p>
+			  	</li>
+			    <li>
+			    	<h3>Издательский.</h3>
+			    	<p>Эта функциональность позволяет пользователям использовать шаблон или набор шаблонов, одобренных организацией, а также и других инструментов для создания и изменения содержимого.</p>
+			    </li>
+			</ol>
+
+			<div class="o-container o-container--medium">
+				<p class="c-paragraph">CMS также может предоставлять инструменты для персонализации или индивидуального маркетинга. Индивидуальный маркетинг — это способность веб-сайта адаптировать свой контент и рекламу к конкретным характеристикам пользователя, используя информацию, предоставляемую пользователем или собираемую веб-сайтом. Например, если пользователь ищет цифровые камеры в основных поисковых системах, таких как Google, рекламные баннеры могут указывать на компании, продающие цифровые камеры, а не на компании, которые продают товары для сада.</p>
+				<p class="c-paragraph">Другие популярные функции CMS включают в себя:</p>
+				<ol class="border">
+				    <li>URL-адреса, удобные для поисковой оптимизации;</li>
+				    <li>интегрированная и интерактивная помощь, включая доски обсуждений;</li>
+				    <li>системы разрешений и безопасность на основе групп;</li>
+				    <li>полная поддержка шаблонов и настраиваемые шаблоны;</li>
+				    <li>простые процедуры установки и управления версиями с помощью мастера;</li>
+				    <li>панель администратора с поддержкой нескольких языков;</li>
+				    <li>минимальные требования к серверу;</li>
+				    <li>встроенные файловые менеджеры; а также</li>
+				    <li>встроенные журналы аудита</li>
+				</ol>
+
+			</div>
+		</div>
+
+		<div class="text-home-page">
+			<div class="o-container o-container--medium">
+				<p><a name="part3"></a></p>
+				<h2>Преимущества использования CMS</h2>
+				<h3>1. Не требуется знаний программирования</h3>
+				<p class="c-paragraph">Позволив не разработчикам и другим пользователям создавать веб-сайты без программирования, системы CMS помогли произвести революцию в веб-дизайне.Прошли те времена, когда вы полагались на веб-разработчиков и дизайнеров, чтобы создать онлайн-присутствие для вашего бизнеса.</p>
+				<p class="c-paragraph">Вы можете создавать контент и управлять им, настраивать дизайн своего сайта и устанавливать расширения для добавления функциональности вашему сайту — и все это без написания кода.(Важно отметить, что большинство платформ также позволяют добавлять собственный код для более детального контроля над вашим сайтом.)</p>
+				<p class="c-paragraph">В результате пользователи с ограниченными техническими ресурсами и временем могут создать мощный веб-сайт для своего бизнеса.</p>
+				<p class="c-paragraph">Позволив не разработчикам и другим пользователям создавать веб-сайты без программирования, системы CMS помогли произвести революцию в веб-дизайне.Прошли те времена, когда вы полагались на веб-разработчиков и дизайнеров, чтобы создать онлайн-присутствие для вашего бизнеса.</p>
+				<p class="c-paragraph">Вы можете создавать контент и управлять им, настраивать дизайн своего сайта и устанавливать расширения для добавления функциональности вашему сайту — и все это без написания кода.(Важно отметить, что большинство платформ также позволяют добавлять собственный код для более детального контроля над вашим сайтом.)</p>
+				<p class="c-paragraph">В результате пользователи с ограниченными техническими ресурсами и временем могут создать мощный веб-сайт для своего бизнеса.</p>
+
+				<h3>2. Простое сотрудничество</h3>
+				<p class="c-paragraph">Несколько пользователей могут одновременно получать доступ к серверной части CMS и работать с ней. Это означает, что в любой день ваши маркетологи могут создавать контент, ваши ИТ-специалисты внедряют протоколы безопасности, а ваши разработчики добавляют собственный код в вашу тему. Фактически, все они могут работать на одной целевой странице.</p>
+				<p class="c-paragraph">Короче говоря, CMS может помочь улучшить рабочие процессы и производительность всей вашей команды.</p>
+
+				<h3>3. Роли пользователей и разрешения</h3>
+				<p class="c-paragraph">CMS позволяет вам сотрудничать наиболее эффективным и безопасным способом благодаря встроенным (и часто настраиваемым) ролям и разрешениям пользователей. Это означает, что авторы контента, например, могут иметь все разрешения, необходимые им для написания, публикации и управления контентом, но не смогут удалять плагины или иным образом существенно изменять функциональность сайта.</p>
+				<p class="c-paragraph">Вот посмотрите на Редактор ролей пользователей в WordPress.</p>
+				<p class="c-paragraph">Без CMS вам пришлось бы кодировать довольно сложные условия и проверки для <b>создания пользовательских ролей и разрешений в JavaScript.</b></p>
+				
+				<p><a href="img/cms1.jpeg" target="_blank">
+			        <img src="img/cms1.jpeg" class="img-wrapper" alt="Редактор ролей пользователей в WordPress"></a>
+			    </p>
+
+				<h3>4. SEO-функции и расширения</h3>
+				<p class="c-paragraph">Платформы CMS предлагают <b>встроенные функции</b>, а также надстройки, которые помогут вам оптимизировать ваш сайт для поисковых систем.</p>
+				<p class="c-paragraph">Используя встроенные или сторонние инструменты, вы можете:</p>
+				<ol class="border">
+				    <li>Настроить заголовки страниц и метаописания</li>
+				    <li>Выбирать оптимизированные для SEO структуры URL</li>
+				    <li><Создать XML-карт сайта</li>
+				    <li>Добавить замещающий текст изображения</li>
+				    <li>Включить навигационную цепочку</li>
+				    <li>Оптимизировать время загрузки страницы</li>
+				</ol>
+				<p class="c-paragraph">Внедрение этих передовых методов поможет повысить ваши шансы на ранжирование в Google и других основных поисковых системах.</p>
+
+				<h3>5. Функции безопасности и расширения</h3>
+				<p class="c-paragraph">Платформы CMS также предлагают встроенные функции и надстройки, которые помогут вам защитить ваш сайт. Некоторые даже предлагают специальную команду безопасности. CMS Hub, например, предоставляет специальную группу безопасности, работающую круглосуточно и без выходных, брандмауэр веб-приложений корпоративного класса , SSL, настраиваемый CDN, членство в SSO и другие готовые функции.</p>
+
+				<h3>6. Готовые шаблоны</h3>
+				<p class="c-paragraph">Большинство платформ CMS поставляются с набором предварительно разработанных шаблонов, которые можно использовать для быстрой настройки внешнего вида вашего сайта. Они также могут повлиять на поведение вашего сайта.</p>
+				<p class="c-paragraph">Например, выбор адаптивного шаблона гарантирует, что ваш сайт будет хорошо выглядеть на любом устройстве, и вам не потребуется писать кучу кода. Шаблоны не только экономят ваше время на разработку перед запуском вашего сайта, они также могут сделать редизайн веб - сайта намного быстрее и проще в будущем.</p>
+				<p class="c-paragraph"><a href="https://webflow.com/" class="c-link c-link--info" style="color: #5e60ce;">Webflow</a> — это всего лишь одна CMS, которая предлагает сотни адаптивных шаблонов.</p>
+			</div>
+		</div>
+
+		<div class="text-home-page">
+			<div class="o-container o-container--medium">
+
+				<p><a href="img/cms2.jpg" target="_blank" >
+			        <img src="img/cms2.jpg" class="img-wrapper" alt="Страница Webflow">
+			     </a></p>
+
+				<h3>7. Простые обновления</h3>
+				<p class="c-paragraph">Как обсуждалось выше, CMS позволяет вам быстрее и проще вносить изменения на свой сайт — от крупных обновлений, таких как редизайн веб-сайта, до незначительных обновлений, таких как изменение изображения на вашей домашней странице. Вместо того, чтобs нанимать внештатного разработчика или пытаться редактировать код самостоятельно, вы можете зайти в панель управления своей CMS, чтобы обновить и отредактировать содержимое своего веб-сайта. Это позволяет вам сохранять ваш контент динамичным и актуальным.</p>
+
+				<h3>8. Функциональность блога</h3>
+				<p class="c-paragraph">Ведение блога предлагает ряд преимуществ, особенно для бизнеса. Это может помочь привлечь трафик на ваш веб-сайт, преобразовать трафик в потенциальных клиентов, установить авторитет в определенной отрасли, создать обратные ссылки и достичь других долгосрочных результатов. Но создать блог с нуля сложно даже опытным разработчикам.</p>
+				<p class="c-paragraph">Основным преимуществом использования CMS является то, что большинство из них предоставляют встроенные функции ведения блога (или расширения), поэтому легко начать создавать и публиковать контент блога и пожинать плоды.</p>
+
+				<h3>9. Планирование контента</h3>
+				<p class="c-paragraph">Планирование контента имеет важное значение для любой редакционной стратегии. При создании сайта с нуля вы можете запланировать контент, но для этого потребуется сочетание кода и таких инструментов, как GitHub.</p>
+				<p class="c-paragraph">С CMS запланировать контент так же просто, как нажать кнопку. Большинство платформ позволяют планировать не только публикации в блогах. Например, с помощью CMS Hub вы можете планировать публикации в блогах, а также страницы веб-сайтов, целевые страницы и электронные письма.</p>
+				<p class="c-paragraph">Вот посмотрите на вкладку планирования в редакторе блога HubSpot.</p>
+
+				<p><a href="img/cms3.jpg" target="_blank">
+			        <img src="img/cms3.jpg" class="img-wrapper" alt="Планирование в редакторе блога HubSpot"></a>
+			    </p>
+
+				<h3>10. Легкий доступ</h3>
+				<p class="c-paragraph">С платформой CMS вы можете получить доступ и редактировать свой сайт практически на любом устройстве с подключением к Интернету. Это намного проще, чем альтернатива созданию сайта с нуля, которая требует, чтобы вы находились на устройстве, подключенном к серверу, или подключались удаленно.</p>
+				<p class="c-paragraph">Кроме того, большинство систем CMS имеют единую панель инструментов или панель управления, где вы можете получить доступ к содержимому вашего сайта, теме, плагинам, настройкам и многому другому — все в одном месте.</p>
+				<p class="c-paragraph">Если ваш сайт растет, вам может потребоваться перейти на CMS, чтобы удовлетворить ваши потребности.</p>
+				<p class="c-paragraph">Использование CMS-движка небезосновательно считается самым подходящим вариантом для веб-страниц со стандартным функционалом. Вышеперечисленные преимущества убедительно подтверждают этот факт. Большинство организаций, не относящихся к IT-сектору, но желающих иметь собственный сайт, предпочитают пользоваться системами управления контентом. Применение Content Management System зачастую оказывается более выгодным и целесообразным подходом, чем формирование интернет-страницы с нуля.</p>
+				<p class="c-paragraph">Однако CMS-движок малопригоден для разработки уникального сайта с нетипичным функционалом. В этом и заключается существенный недостаток системы управления веб-контентом. Если организация предъявляет особые требования к своему онлайн-ресурсу, ей стоит обзавестись штатными программистами или, как вариант, обратиться в IT-фирму соответствующей специализации.</p>
+			</div>
+		</div>
+
+		<div class="text-home-page">
+			<div class="o-container o-container--medium">
+				<p class="c-paragraph"><a name="part4"></a></p>
+				<h2>Сравнение бесплатных и платных CMS</h2>
+				<table class="c-table">
+				  	<caption class="c-table__caption">Сравнение бесплатных и платных CMS</caption>
+				  	<thead class="c-table__head">
+				    	<tr class="c-table__row c-table__row--heading color-item">
+				      		<th class="c-table__cell">Бесплатные</th>
+				      		<th class="c-table__cell">Платные</th>
+				    	</tr>
+				  	</thead>
+				  	<tbody class="c-table__body">
+				    	<tr class="c-table__row">
+				      		<td class="c-table__cell">Экономия средств</td>
+				      		<td class="c-table__cell">Нужно постоянно продлевать лицензию, некоторые системы могут быть достаточно дорогие</td>
+				    	</tr>
+				    	<tr class="c-table__row">
+				      		<td class="c-table__cell">Много плагинов, расширяющих функционал</td>
+				      		<td class="c-table__cell">Много плагинов, расширяющих функционал</td>
+				    	</tr>
+				    	<tr class="c-table__row">
+				      		<td class="c-table__cell">Подходят почти для любого проекта</td>
+				      		<td class="c-table__cell">Возможности платных CMS позволяют сделать сайты со сложными решениями</td>
+				    	</tr>
+				    	<tr class="c-table__row">
+				      		<td class="c-table__cell">Злоумышленники могут найти лазейки в открытом коде и взломать сайт. Этот пункт справедлив не для всех бесплатных CMS</td>
+				      		<td class="c-table__cell">Высокий уровень безопасности — как самого ядра, так и сторонних компонентов</td>
+				    	</tr>
+				    	<tr class="c-table__row">
+				      		<td class="c-table__cell">Некоторые модули и плагины могут быть несовместимы с CMS</td>
+				      		<td class="c-table__cell">Большинство плагинов уже есть на CMS и не требуют дополнительной установки извне</td>
+				    	</tr>
+				    	<tr class="c-table__row">
+				      		<td class="c-table__cell">Не у всех бесплатных панелей есть техническая поддержка</td>
+				      		<td class="c-table__cell">Есть техническая поддержка, которая поможет устранить появившиеся проблемы</td>
+				    	</tr>
+				  	</tbody>
+				</table>
+			</div>
+		</div>
+
+		<div class="video">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/bKUd1RoDVJ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		
+
+	</main>
+ 
+	<footer class="footer">
+		<p>nik1forowap@yandex.ru</p>
+		<p>All rights reserved. 2022</p>
+	</footer>
+
+	<script>
+		function openRightMenu() {
+		  document.getElementById("rightMenu").style.display = "block";
+		}
+
+		function closeRightMenu() {
+		  document.getElementById("rightMenu").style.display = "none";
+		}
+	</script>
+
+	<script>
+		var modal = document.getElementById('myModal');
+		var img = document.getElementById('myImg');
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		img.onclick = function(){
+		    modal.style.display = "block";
+		    modalImg.src = this.src;
+		    captionText.innerHTML = this.alt;
+		}
+		var span = document.getElementsByClassName("close")[0];
+		span.onclick = function() {
+		  	modal.style.display = "none";
+		}
+	</script>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+	    crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+	<script>
+	    $(".gallery-list").magnificPopup({
+	      delegate: "a",
+	      type: "image",
+	      gallery: {
+	        enabled: true
+	      }
+	    });
+	</script>
+</body>
+</html>

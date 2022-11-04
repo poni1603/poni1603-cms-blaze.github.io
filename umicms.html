@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Umi.CMS</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://unpkg.com/@blaze/css@12.0.0/dist/blaze/blaze.css">
+	<script type="module" src="https://unpkg.com/@blaze/atoms@12.0.0/dist/blaze-atoms/blaze-atoms.esm.js"></script>
+	<script nomodule="" src="https://unpkg.com/@blaze/atoms@12.0.0/dist/blaze-atoms/blaze-atoms.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+	<style>
+		@font-face {
+			font-family: 'Durik';
+			src: url('durik-Regular.woff2') format('woff2'), url('durik-Regular.woff') format('woff');
+			font-weight: 400;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'LIBRARY 3 AM';
+			src: url('fonts/LIBRARY3AM.woff2') format('woff2'), url('fonts/LIBRARY3AM.woff') format('woff');
+			font-weight: 400;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Monitorica';
+			src: url('fonts/Monitorica.woff2') format('woff2'), url('fonts/Monitorica.woff') format('woff');
+			font-weight: 400;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'MADE Evolve Sans EVO';
+			src: url('fonts/MADEEvolveSansEVO-Thin.woff2') format('woff2'), url('fonts/MADEEvolveSansEVO-Thin.woff') format('woff');
+			font-weight: 200;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'TM Vinograd Filled';
+			src: url('fonts/TMVinograd-Filled.woff2') format('woff2'), url('fonts/TMVinograd-Filled.woff') format('woff');
+			font-weight: 400;
+			font-style: normal;
+		}
+
+	</style>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+	<header>
+
+		<div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0;background: #050f13;color: white;font-family: 'Monitorica', sans-serif; width: 300px; font-size: 20px; border-color: skyblue; border-left-width: 3px;" id="rightMenu">
+		  	<button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">Закрыть <i class="fa-solid fa-arrow-right"></i></button>
+		  	<button role="menuitem" class="c-card__control"><a href="onec.html">1C:Битрикс</a></button>
+		  	<blaze-accordion>
+				<blaze-accordion-pane header="Umi.CMS" class="c-card__control c-card__control--active c-card-item-background">
+					<p><a href="#part1">Что это такое?</a></p>
+					<p><a href="#part2">Преимущества и недостатки</a></p>
+					<p><a href="#part3">Функционал</a></p>
+					<p><a href="#part4">Вывод</a></p>
+			  	</blaze-accordion-pane>
+			</blaze-accordion>
+		  	<button role="menuitem" class="c-card__control"><a href="netcat.html">NetCat</a></button>
+			<button role="menuitem" class="c-card__control"><a href="dle.html">DLE</a></button>
+		  	
+		</div>
+
+		<div class="w3-teal">
+		  	<button class="sticky w3-button w3-teal w3-xlarge w3-right" onclick="openRightMenu()"><i class="fa-solid fa-bars"></i>
+			</button>
+		</div>
+
+		<div class="logo">
+			<a href="index.html"><img class="img_logo" src="img/cms2.png" widht="355" height="99" alt=""></a>
+		</div>
+
+	</header>
+
+	<nav>
+	    <ul class="topmenu">
+	        <li><a href="index.html">Что такое CMS?</a></li>
+	    	<li><a href="free.html">Бесплатные</a>
+	       		<ul class="submenu">
+				    <li><a href="wordpress.html">WordPress</a></li>
+				    <li><a href="joomla.html">Joomla</a></li>
+				    <li><a href="opencart.html">OpenCart</a></li>
+				    <li><a href="drupal.html">Drupal</a></li>
+				</ul>
+	    	</li>
+		    <li><a href="pay.html">Платные</a>
+		     	<ul class="submenu">
+		    		<li><a href="onec.html">1C: Битрикс</a></li>
+		     		<li><a href="umicms.html">Umi.CMS</a></li>
+				    <li><a href="netcat.html">NetCat</a></li>
+				    <li><a href="dle.html">DLE</a></li>
+		     	</ul>
+	    	</li>
+	    </ul>
+	</nav>
+
+	<main>
+		<blaze-back-to-top position="center">
+		 	<button class="c-button c-button--info">Наверх</button>
+		</blaze-back-to-top>		
+
+		<div class="start">
+			<div class="o-container o-container--medium">
+				<p class="c-paragraph"><a href="https://www.umi-cms.ru/">Umi.CMS</a> — конструктор, заточенный под создание сайтов для малого и среднего бизнеса.</p>
+			</div>
+		</div>
+		<div class="text-home-page">
+			<div class="o-container o-container--medium">
+
+				<p class="c-paragraph">Его фишка – встроенная функциональность с приложениями компании 1С. Разработчики конструктора позаботились о большом количестве инструментов для продвижения и маркетинга, также доступна CRM начального уровня.</p>	
+
+				<p><a name="part1"></a></p>
+				<h2>Что такое Umi.CMS</h2> 
+
+				<p><a href="img/umi1.jpg" target="_blank">
+			        <img src="img/umi1.jpg" class="img-wrapper" alt="Редактор ролей пользователей в WordPress"></a>
+			    </p>
+
+				<p class="c-paragraph"> <b>Umi.CMS</b> - это удобный конструктор для создания самых разных проектов: сайтов-визиток, промо, корпоративных, интернет-магазинов, онлайн-витрин, инфоресурсов, порталов. Мультифункциональность позволяет подключать к одной лицензии любое количество ресурсов, которые принадлежат одной компании.</p>
+				<p class="c-paragraph">Продукт интегрирован с «1С: Предприятие», что обеспечивает автоматический двусторонний обмен данными с торговыми конфигурациями. В распоряжении пользователя больше 500 объектов для разработки веб-сайтов.</p>	
+				<p class="c-paragraph">Еще одна отличительная особенность – встроенный файловый менеджер. Для скачивания администратору не обязательно заходить на сервер – все удастся сделать через админку. Плюс к этому, файловый менеджер обеспечивает возможность загрузки и удаления контента, корректировку изображений. Подобный редактор очень полезен при наполнении карточек товаров, размещении статей и других материалов.</p>	
+				<p class="c-paragraph">Umi.CMS носит чисто коммерческий характер, он не подходит для создания сайтов для души. Также он не особенно интересен для опытных пользователей, зато станет отличным вариантом для тех, кто хочет создать свой первый интернет-магазин.</p>
+
+			</div>
+		</div>
+
+		<div class="text-home-page">
+			<div class="o-container o-container--medium">
+				<p><a name="part2"></a></p>
+				<h2>Преимущества и недостатки Umi.CMS</h2>
+				<p class="c-paragraph">На сегодня Umi.CMS одна из самых востребованных систем. Основное назначение – разработка интернет-магазинов. При необходимости его можно использовать и для создания сайтов другого типа, однако не всегда это будет рационально с учетом стоимости лицензии и функциональных возможностей. Например, для блога или корпоративной страницы с необычной структурой больше подойдет Drupal, а для максимально функциональных сайтов лучше SaaS-конструкторы – uKit или Wix.</p>	
+				<p class="c-paragraph">Из основных преимуществ Umi.CMS простота и удобство. Это достигаются за счет использования полезных инструментов и технологий. Яркий пример – Edit-In-Place. С помощью этой технологии можно редактировать содержимое страницы без входа в админпанель. Аналогичные опции есть в uCoz, в CMS же подобная опция встречается не часто.</p>	
+				<p class="c-paragraph">Другой плюс – наличие тулбара. Он гарантирует, что владелец сайта сможет быстро среагировать на новые события, которые совершают посетители. Это касается появления каждого нового пользователя, оформление заказа или же сообщение на форуме, комментарий. Даже в том случае, когда вкладка с сайтом закрыта, тулбар и дальше функционирует.</p>	
+				<p class="c-paragraph">Среди других ощутимых преимуществ Umi.CMS:</p>	
+				<ol class="border">
+					<li><Обширный магазинный функционал с бонусом в виде синхронизации с «1С: Управление торговлей». Даже при том, что эта опция платная, она есть в наличии./li>
+					<li>Много шаблонов. В них доступно редактирование стилей через CSS.</li>
+					<li>Хорошие инструменты для SEO-оптимизации.</li>
+					<li>Быстрая установка на сервер.</li>
+					<li>Простая панель управления и система наполнения контентом.</li>
+					<li>Доступные цены на создание визитки.</li>
+					<li>Хорошая техподдержка и продуманный в деталях раздел FAQ. Плюс есть раздел «Обучение» на официальном сайте. Там регулярно появляются ссылки на новые вебинары, они бесплатны. Спикеры рассказывают об особенностях работы с движком и многом другом. Уроки пригодятся не только веб-разработчику, но и владельцу интернет-магазина на Umi.CMS.</li>
+					<li>Развернутая статистика.</li>
+					<li>Совместимость с платежными системами, курьерскими службами и другими сервисами.</li>
+					<li>Адаптация под мобильные устройства.</li>
+					<li>Высокий уровень безопасности.</li>
+				</ol>	
+				<p class="c-paragraph">Недостатки в Umi.CMS также присутствуют. Многие опытные разработчики уверены, что у этого движка просто хорошая реклама, а выбирают его неопытные пользователи. Дело  в том, что Umi.CMS имеет серьезные требования к хостингу, поэтому его нужно выбирать очень внимательно. Далеко не на каждой площадке движок будет работать. Многих отпугивает достаточно высокая цена этого коробочного решения. Среди других минусов:</p>	
+				<ol class="border">
+					<li>ограниченное количество расширений – их около 40 и большинство заточены под интернет-магазины;</li>
+					<li>минимальные встроенные возможности для кастомизации – те что присутствуют в основном однотипные;</li>
+					<li>слишком простой дизайн панели управления и ее медленная работа;</li>
+					<li>невнятный визуальный редактор.</li>
+				</ol>
+				<p class="c-paragraph">Кроме того, что тарифы высокие, они еще и очень запутанные, а бесплатных просто нет.</p>	
+			</div>
+		</div>
+
+		<div class="text-home-page">
+			<div class="o-container o-container--medium">
+				<p><a name="part3"></a></p>
+				<h2>Функциональные возможности Umi.CMS</h2>	
+
+				<p><a href="img/umi2.jpg" target="_blank">
+			        <img src="img/umi2.jpg" class="img-wrapper" alt="Редактор ролей пользователей в WordPress"></a>
+			    </p>
+
+				<p class="c-paragraph">Эргономика административной панели Umi.CMS на среднем уровне, даже немного выше среднего. Она похожа на админки других известных движков. В этом нет ничего страшного или удивительного, ведь структура как у WordPress или OpenCart доказала свою эффективность, поэтому и получила большое распространение. В плане производительности нельзя сказать, что адмика Umi.CMS радует. Очень ощущаются подтормаживание при переходе между секциями – это раздражает.</p>	
+				<p class="c-paragraph">Для редактирования страниц в Umi.CMS предусмотрен визуальный редактор, перейти в него можно нажатием F2. После чего можете сразу же внести изменения в текст или же графический элемент. Недоступно изменение структуры блоков, в том числе их перемещение, добавление или удаление. То есть, не рассчитывайте уйти далеко от предложенного шаблонного решения. Максимум, что сможете поменять, – это надписи и картинки.</p>	
+				<p class="c-paragraph">Возможности административной панели:</p>	
+				<ol class="bullet2">
+					<li>Просмотр сведений о сайте, его типе, сроке действия тарифа, домене, оставшемся месте на диске. В разделе «Главная» доступны полезные советы по наполнению сайта, из него же можно перейти в раздел помощи, обратиться в техподдержку, почитать новости, комментарии с вашего сайта.</li>
+					<li>Редактирование и просмотр сайта в режиме реального времени.</li>
+					<li>Во вкладке «контент» можно редактировать и создавать страницы и пункты меню. Доступен следующий функционал: добавление товаров, настройка режима комментирования через соцсети, конструирование шаблонов обратной связи, экспорт/импорт товаров из файлов CSV/YML. Для товаров удастся также активировать доп опции. Например, стикеры «акция», «хит продаж» и т.п.</li>
+					<li>Раздел «магазин» самый интересный для тех, кто с помощью Umi.CMS создает коммерческий сайт. Здесь можно просмотреть полную статистику заказов, получить финансовую информацию, настроить варианты и стоимость доставки, создавать почтовые рассылки, выгружать товары из Яндекс.Маркета. Здесь же осуществляется управление клиентской базой. Также доступна настройка скидок, подключение системы онлайн-платежей, просмотр детальной статистики продаж.</li>
+					<li>Изменение шаблонов. Это доступно путем корректировки его CSS-файла и загрузки фавикона. Обратите внимание, подобная опция не штатная, что достаточно странно для конструктора.</li>
+					<li>Подключение и интеграция с «1С: Управление торговлей», «Мой склад», amroCRM, Catalogloader.</li>
+					<li>Привязка сайта к уже имеющемуся домену, настройка NS-серверов, покупка доменного имени и просмотр биллинга доменных операций.</li>
+					<li>Покупка и привязка SSL-сертификата на 1 год.</li>
+					<li>Создание почты сайта и настройка ее параметров.</li>
+					<li>Просмотр аналитики Google Analytics, синхронизация движка с аккаунтом статистики Google.</li>
+					<li>Мониторинг срока действия текущего тарифа. Доступно его изменение или даже выкуп навсегда.</li>
+				</ol>
+				<p class="c-paragraph">Кроме того, доступна синхронизация с системой SEO продвижения, правка файла robots.txt, прикрепление счетчика, настройка редиректов. Есть раздел продвижения в социальных сетях. Причем возможно применение набора профильных инструментов PromoRepublic.</p>	
+				<p class="c-paragraph">Детальнее следует остановиться на доменах. Сразу после регистрации сайту выдается техническое доменное имя. Оно будет доступно на протяжении 15 дней – это пробный период. Далее, если вы не измените его на собственный, будет присвоено название сайта.umi.ru.</p>	
+				<p class="c-paragraph">Собственно регистрацию домена можно сделать прямо в админке. Также доступно прикрепление доменного имени от стороннего регистратора, правда для этого придется погрузиться в тонкости настройки NS-серверов. Обратите внимание, при оплате тарифа сразу на 3 и более месяцев, вы получаете в подарок домен.</p>	
+				<p class="c-paragraph">Доступно 40+ официальных расширений. После того, как купите один из лицензионных пакетов, вы можете дополнительно приобрести другие модули. Отметим, что стоимость их достаточно высока. Например, если хотите установить «Форумы», придется заплатить почти 7 тыс. рублей.</p>	
+				<p class="c-paragraph">Поэтому покупать самый дешевый тариф с последующей его доукомплектацией расширениями – не самое экономное решение. Рациональней сразу выбирать подходящий «коробочный пакет».</p>
+			</div>
+		</div>
+
+		<div class="text-home-page">
+			<div class="o-container o-container--medium">
+				<p><a name="part4"></a></p>
+				<h2>Вывод</h2>
+				<p class="c-paragraph">Движок Umi.CMS нельзя назвать однозначно хорошим или же отнести к плохим. Создатели тщательно работали над своим детищем, однако некоторые возможности не дотягивают к современным стандартам и выглядят откровенно устаревшими. Админка простая и приятная, что добавляет удобства ее использования. Есть проблемы с очевидными возможностями, которые просто необходимы для конструктора.</p>	
+				<p class="c-paragraph">Ценовая политика не особенно радует, ведь при тех возможностях, которые представлены в Umi.CMS стоимость пакетов очень завышена. То, что однозначно порадует, так это возможности поискового продвижения. Иногда именно инструменты SEO могут стать решающими при выборе того или иного движка.</p>	
+			</div>
+		</div>
+	</main>
+ 
+	<footer class="footer">
+		<p>nik1forowap@yandex.ru</p>
+		<p>All rights reserved. 2022</p>
+	</footer>
+
+	<script>
+		function openRightMenu() {
+		  document.getElementById("rightMenu").style.display = "block";
+		}
+
+		function closeRightMenu() {
+		  document.getElementById("rightMenu").style.display = "none";
+		}
+	</script>
+
+	<script>
+		var modal = document.getElementById('myModal');
+		var img = document.getElementById('myImg');
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		img.onclick = function(){
+		    modal.style.display = "block";
+		    modalImg.src = this.src;
+		    captionText.innerHTML = this.alt;
+		}
+		var span = document.getElementsByClassName("close")[0];
+		span.onclick = function() {
+		  	modal.style.display = "none";
+		}
+	</script>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+	    crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+	<script>
+	    $(".gallery-list").magnificPopup({
+	      delegate: "a",
+	      type: "image",
+	      gallery: {
+	        enabled: true
+	      }
+	    });
+	</script>
+</body>
+</html>

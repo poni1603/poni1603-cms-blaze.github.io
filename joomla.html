@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Joomla</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://unpkg.com/@blaze/css@12.0.0/dist/blaze/blaze.css">
+	<script type="module" src="https://unpkg.com/@blaze/atoms@12.0.0/dist/blaze-atoms/blaze-atoms.esm.js"></script>
+	<script nomodule="" src="https://unpkg.com/@blaze/atoms@12.0.0/dist/blaze-atoms/blaze-atoms.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+	<style>
+		@font-face {
+			font-family: 'Durik';
+			src: url('durik-Regular.woff2') format('woff2'), url('durik-Regular.woff') format('woff');
+			font-weight: 400;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'LIBRARY 3 AM';
+			src: url('fonts/LIBRARY3AM.woff2') format('woff2'), url('fonts/LIBRARY3AM.woff') format('woff');
+			font-weight: 400;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Monitorica';
+			src: url('fonts/Monitorica.woff2') format('woff2'), url('fonts/Monitorica.woff') format('woff');
+			font-weight: 400;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'MADE Evolve Sans EVO';
+			src: url('fonts/MADEEvolveSansEVO-Thin.woff2') format('woff2'), url('fonts/MADEEvolveSansEVO-Thin.woff') format('woff');
+			font-weight: 200;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'TM Vinograd Filled';
+			src: url('fonts/TMVinograd-Filled.woff2') format('woff2'), url('fonts/TMVinograd-Filled.woff') format('woff');
+			font-weight: 400;
+			font-style: normal;
+		}
+
+	</style>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+	<header>
+
+		<div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0;background: #050f13;color: white;font-family: 'Monitorica', sans-serif; width: 300px; font-size: 20px; border-color: skyblue; border-left-width: 3px;" id="rightMenu">
+		  	<button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">Закрыть <i class="fa-solid fa-arrow-right"></i></button>
+		  	<button role="menuitem" class="c-card__control"><a href="wordpress.html">WordPress</a></button>
+		  	<blaze-accordion>
+				<blaze-accordion-pane header="Joomla" class="c-card__control c-card__control--active c-card-item-background">
+					<p><a href="#part1">Удобство использования</a></p>
+					<p><a href="#part2">Создание сайта</a></p>
+					<p><a href="#part3">Достоинства и недостатки</a></p>
+					<p><a href="#part4">Вывод</a></p>
+			  	</blaze-accordion-pane>
+			</blaze-accordion>
+			<button role="menuitem" class="c-card__control"><a href="opencart.html">OpenCart</a></button>
+		  	<button role="menuitem" class="c-card__control"><a href="drupal.html">Drupal</a></button>
+		</div>
+
+		<div class="w3-teal">
+		  	<button class="sticky w3-button w3-teal w3-xlarge w3-right" onclick="openRightMenu()"><i class="fa-solid fa-bars"></i>
+			</button>
+		</div>
+
+		<div class="logo">
+			<a href="index.html"><img class="img_logo" src="img/cms2.png" widht="355" height="99" alt=""></a>
+		</div>
+
+	</header>
+
+	<nav>
+	    <ul class="topmenu">
+	        <li><a href="index.html">Что такое CMS?</a></li>
+	    	<li><a href="free.html">Бесплатные</a>
+	       		<ul class="submenu">
+				    <li><a href="wordpress.html">WordPress</a></li>
+				    <li><a href="joomla.html">Joomla</a></li>
+				    <li><a href="opencart.html">OpenCart</a></li>
+				    <li><a href="drupal.html">Drupal</a></li>
+				</ul>
+	    	</li>
+		    <li><a href="pay.html">Платные</a>
+		     	<ul class="submenu">
+		    		<li><a href="onec.html">1C: Битрикс</a></li>
+		     		<li><a href="umicms.html">Umi.CMS</a></li>
+				    <li><a href="netcat.html">NetCat</a></li>
+				    <li><a href="dle.html">DLE</a></li>
+		     	</ul>
+	    	</li>
+	    </ul>
+	</nav>
+
+	<main>
+		<blaze-back-to-top position="center">
+		 	<button class="c-button c-button--info">Наверх</button>
+		</blaze-back-to-top>		
+
+		<div class="start">
+			<div class="o-container o-container--medium">
+				<p class="c-paragraph"><a href="https://www.joomla.org/">Joomla</a> — универсальная система управления контентом с открытым исходным кодом и возможностью расширения функциональности за счёт установки плагинов.</p>
+			</div>
+		</div>
+		<div class="text-home-page">
+			<div class="o-container o-container--medium">
+				
+				<p class="c-paragraph">По распространенности среди бесплатных CMS занимает второе место в мире, уступая только WordPress. Joomla — один из движков, который рекомендуют для первого опыта создания сайта.</p>
+
+				<p><a name="part1"></a></p>
+				<h2>Удобство использования</h2> 
+				<p class="c-paragraph">На большинстве хостингов Joomla устанавливается в автоматическом режиме. Вам нужно только оплатить тариф (есть даже предложения, оптимизированные под работу движка), подключить домен и выбрать CMS в каталоге доступных для инсталляции приложений. Интерфейс системы полностью русифицирован, форумы поддержки и обучающие материалы тоже представлены на русском языке, так что с освоением административной панели сложностей не возникнет.
+				</p>
+				<p class="c-paragraph">Основные возможности движка:
+				</p>
+				<ol class="border">
+				    <li>Техническая оптимизированность под требования поисковиков.</li>
+				    <li>Создание неограниченного количества страниц.</li>
+				    <li>Предустановленная система регистрации с 9 группами пользователей, отличающихся правами доступа.</li>
+				    <li>Визуальный редактор для незначительного изменения дизайна и быстрого добавления новых материалов без входа в административную панель</li>
+				    <li>Менеджер контента, который помогает следить за тем, как посетители сайта реагируют на размещаемые материалы.</li>
+				</ol>
+				<p class="c-paragraph">Движок оснащён и несколькими фишками, которые отличают его от других бесплатных CMS: ускоренной загрузкой страниц, режимом отладки и возможностью общения с пользователями в частных беседах, организованных через общую почтовую систему. Всё это базовая функциональность, которая заметно расширяется установкой плагинов.</p>	
+
+				<p><a href="img/joom1.png" target="_blank">
+			        <img src="img/joom1.png" class="img-wrapper" alt="Сайт Microsoft"></a>
+			    </p>
+
+			    <p class="c-paragraph">Модули, добавляющие новые возможности, доступны для скачивания из официального каталога Joomla или со сторонних ресурсов. Также их можно создать самостоятельно — в этом преимущество открытого исходного кода системы. Конфигурация CMS зависит от того, какие плагины вы добавите. Совсем без них обойтись вряд не получится, потому что расширения выполняют целый ряд очень важных задач:</p>	
+			    <ol class="border">
+			    	<li>защищают от несанкционированного доступа и спама;</li>
+			    	<li>позволяют создавать резервные копии;</li>
+			    	<li>помогают оптимизировать сайт под требования поисковых систем;</li>
+			    	<li>повышают юзабилити сайта за счёт добавления полезных виджетов и приложений;</li>
+			    </ol>
+			    <p class="c-paragraph">У каждого плагина есть набор настроек, отвечающих за его функциональность. Это делает Джумлу очень гибкой системой, которую можно использовать для создания самых разных сайтов. Если для реализации проекта не хватает возможностей, которые предлагают готовые решения, можно кастомизировать систему на более глубоком уровне. Joomla представляет собой скрипты PHP и JavaScript. Это распространённые языки программирования, поэтому нет проблем с поиском специалистов или учебных материалов для самостоятельной подготовки.</p>	
+			    <p class="c-paragraph">Движок обладает высоким уровнем защищённости от взлома и несанкционированного доступа. Разработчики регулярно выпускают обновления, в том числе с новыми инструментами обеспечения безопасности. Однако слабым местом системы остаются расширения. Контролировать качество плагинов, скачанных из неизвестных источников, невозможно. Поэтому рекомендуется пользоваться только дополнениями из официального каталога и следить за тем, чтобы разработчик не бросал их поддержку.</p>	
+			</div>
+		</div>
+
+		<div class="text-home-page">
+			<div class="o-container o-container--medium">
+				<p><a name="part2"></a></p>
+				<h2>Создание сайта на Joomla</h2>
+				<p class="c-paragraph">На большинстве хостингов Joomla устанавливается в один клик из списка приложений. Некоторые хостеры даже предлагают тарифы с предустановленной CMS. Но даже если придётся ставить Джумлу вручную, проблемой это не станет. Нужно:</p>	
+				<ol class="bullet">
+					<li>скачать дистрибутив;</li>
+					<li>загрузить его на хостинг по FTP;</li>
+					<li>перейти по адресу сайта, подключить базу данных;</li>
+					<li>завершить установку Joomla.</li>
+				</ol>
+				<p class="c-paragraph">Выполнить все действия поможет мастер инсталляции. После завершения установки вы получите доступ к панели администратора Joomla. Фактически сайт уже создан, дальше нужно его настроить и наполнить контентом.</p>
+			</div>
+		</div>
+
+		<div class="text-home-page">
+			<div class="o-container o-container--medium">
+				<p><a name="part3"></a></p>
+				<h2>Достоинства и недостатки</h2>
+				<p class="c-paragraph">НГлавное достоинство Joomla — гибкость, которая достигается за счёт открытости исходного кода и большого количества плагинов для расширения базовой функциональности. Бесплатное распространение движка сделало его столь популярным среди веб-мастеров и помогло сформировать пользовательское сообщество, которое в том числе занимается созданием дополнительных материалов: шаблонов, плагинов, инструкций. Среди других достоинств отметим:</p>
+				<ol class="border">
+					<li>Простая установка. На большинстве хостингов Joomla разворачивается в автоматическом режиме. Некоторые хостеры даже предлагают специальные тарифы, оптимизированные под работу с этой CMS.</li>
+					<li>Удобная панель администратора, на освоение которой не требуется много времени.</li>
+					<li>Локализация системы и популярных плагинов на русский язык.</li>
+					<li>Регулярное обновление системы и её компонентов.</li>
+				</ol>
+				<p class="c-paragraph">Один из недостатков Джумлы — высокий процент взломанных сайтов. Правда, связано это в первую очередь с популярностью системы. Движок часто используют начинающие веб-мастера, которые не сразу разбираются с настройками безопасности. На коммерческих системах угроз меньше из-за закрытого ядра, Джумла же для любителей несанкционированного доступа — открытая книга. Кроме того, уязвимости часто скрываются в расширениях, поэтому к их выбору нужно подходить с большим вниманием.</p>
+				<p class="c-paragraph">Проблемы могут возникнуть и при обновлении системы. Главная сложность — несовместимость версий движка и плагинов. Особенно это касается бесплатных дополнений, разработчики которых не всегда успевают вовремя выпустить апдейты или вовсе прекращают поддержку продукта. Из-за этого появляются сбои в работе. Поэтому перед обновлением движка рекомендуется делать резервную копию и отключать все плагины, а затем включать их по очереди, проверяя работоспособность.</p>	
+				<p class="c-paragraph">Недовольны Джумлой и многие профессиональные разработчики, которые считают, что в структуре CMS есть недоработки, усложняющие её кастомизацию, а излишний код в шаблонах и самом движке приводят к медленной загрузке страниц. Впрочем, на популярность Joomla эти недостатки если и влияют, то минимально — систему продолжают применять для реализации самых разных идей.</p>
+			</div>
+		</div>
+
+		<div class="text-home-page">
+			<div class="o-container o-container--medium">
+				<p><a name="part4"></a></p>
+				<h2>Вывод</h2>
+				<p class="c-paragraph">Joomla — система, в которой легко разобраться без специальных навыков. Для её установки достаточно оплатить тариф на хостинге и нажать пару кнопок, а первоначальная настройка и управление контентом разобраны в тысяче руководств и инструкций. Джумла позволяет запускать проекты разной степени сложности, в том числе крупные — для них она годится даже больше, чем для одностраничников и визиток, которые эффективнее создавать на конструкторах.</p>
+				<p class="c-paragraph">Стандартные возможности движка не впечатляют, но открытый исходный код и большое количество плагинов делают его очень гибким. Джумла подходит начинающим веб-мастерам, которые ограничиваются визуальными инструментами редактирования, и профессиональным разработчикам, которые могут свободно кастомизировать систему для решения своих задач.</p>	
+				<p class="c-paragraph">Проблема Joomla, как и других бесплатных CMS модульного типа, в отличии от готовых решений вроде uKit или Wix, кроется в необходимости устанавливать различные расширения. Это снижает безопасность системы, поэтому при выборе модулей нужно обязательно руководствоваться советами более опытных пользователей.</p>
+			</div>
+		</div>
+	</main>
+ 
+	<footer class="footer">
+		<p>nik1forowap@yandex.ru</p>
+		<p>All rights reserved. 2022</p>
+	</footer>
+
+	<script>
+		function openRightMenu() {
+		  document.getElementById("rightMenu").style.display = "block";
+		}
+
+		function closeRightMenu() {
+		  document.getElementById("rightMenu").style.display = "none";
+		}
+	</script>
+
+	<script>
+		var modal = document.getElementById('myModal');
+		var img = document.getElementById('myImg');
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		img.onclick = function(){
+		    modal.style.display = "block";
+		    modalImg.src = this.src;
+		    captionText.innerHTML = this.alt;
+		}
+		var span = document.getElementsByClassName("close")[0];
+		span.onclick = function() {
+		  	modal.style.display = "none";
+		}
+	</script>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+	    crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+	<script>
+	    $(".gallery-list").magnificPopup({
+	      delegate: "a",
+	      type: "image",
+	      gallery: {
+	        enabled: true
+	      }
+	    });
+	</script>
+</body>
+</html>

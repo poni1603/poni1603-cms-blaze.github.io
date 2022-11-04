@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DLE</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://unpkg.com/@blaze/css@12.0.0/dist/blaze/blaze.css">
+	<script type="module" src="https://unpkg.com/@blaze/atoms@12.0.0/dist/blaze-atoms/blaze-atoms.esm.js"></script>
+	<script nomodule="" src="https://unpkg.com/@blaze/atoms@12.0.0/dist/blaze-atoms/blaze-atoms.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+	<style>
+		@font-face {
+			font-family: 'Durik';
+			src: url('durik-Regular.woff2') format('woff2'), url('durik-Regular.woff') format('woff');
+			font-weight: 400;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'LIBRARY 3 AM';
+			src: url('fonts/LIBRARY3AM.woff2') format('woff2'), url('fonts/LIBRARY3AM.woff') format('woff');
+			font-weight: 400;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Monitorica';
+			src: url('fonts/Monitorica.woff2') format('woff2'), url('fonts/Monitorica.woff') format('woff');
+			font-weight: 400;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'MADE Evolve Sans EVO';
+			src: url('fonts/MADEEvolveSansEVO-Thin.woff2') format('woff2'), url('fonts/MADEEvolveSansEVO-Thin.woff') format('woff');
+			font-weight: 200;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'TM Vinograd Filled';
+			src: url('fonts/TMVinograd-Filled.woff2') format('woff2'), url('fonts/TMVinograd-Filled.woff') format('woff');
+			font-weight: 400;
+			font-style: normal;
+		}
+
+	</style>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+	<header>
+
+		<div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0;background: #050f13;color: white;font-family: 'Monitorica', sans-serif; width: 300px; font-size: 20px; border-color: skyblue; border-left-width: 3px;" id="rightMenu">
+		  	<button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">Закрыть <i class="fa-solid fa-arrow-right"></i></button>
+		  	<button role="menuitem" class="c-card__control"><a href="onec.html">1C:Битрикс</a></button>
+		  	<button role="menuitem" class="c-card__control"><a href="umicms.html">Umi.CMS</a></button>
+		  	<button role="menuitem" class="c-card__control"><a href="netcat.html">NetCat</a></button>
+		  	<blaze-accordion>
+				<blaze-accordion-pane header="DLE" class="c-card__control c-card__control--active c-card-item-background">
+					<p><a href="#part1">Удобство использования</a></p>
+					<p><a href="#part2">Затраты на создание сайта</a></p>
+					<p><a href="#part3">Преимущества и недостатки</a></p>
+					<p><a href="#part4">Вывод</a></p>
+			  	</blaze-accordion-pane>
+			</blaze-accordion>
+		</div>
+
+		<div class="w3-teal">
+		  	<button class="sticky w3-button w3-teal w3-xlarge w3-right" onclick="openRightMenu()"><i class="fa-solid fa-bars"></i>
+			</button>
+		</div>
+
+		<div class="logo">
+			<a href="index.html"><img class="img_logo" src="img/cms2.png" widht="355" height="99" alt=""></a>
+		</div>
+
+	</header>
+
+	<nav>
+	    <ul class="topmenu">
+	        <li><a href="index.html">Что такое CMS?</a></li>
+	    	<li><a href="free.html">Бесплатные</a>
+	       		<ul class="submenu">
+				    <li><a href="wordpress.html">WordPress</a></li>
+				    <li><a href="joomla.html">Joomla</a></li>
+				    <li><a href="opencart.html">OpenCart</a></li>
+				    <li><a href="drupal.html">Drupal</a></li>
+				</ul>
+	    	</li>
+		    <li><a href="pay.html">Платные</a>
+		     	<ul class="submenu">
+		    		<li><a href="onec.html">1C: Битрикс</a></li>
+		     		<li><a href="umicms.html">Umi.CMS</a></li>
+				    <li><a href="netcat.html">NetCat</a></li>
+				    <li><a href="dle.html">DLE</a></li>
+		     	</ul>
+	    	</li>
+	    </ul>
+	</nav>
+
+	<main>
+		<blaze-back-to-top position="center">
+		 	<button class="c-button c-button--info">Наверх</button>
+		</blaze-back-to-top>		
+
+		<div class="start">
+			<div class="o-container o-container--medium">
+				<p class="c-paragraph"><a href="https://dle-news.ru/">DLE</a> — платная CMS с тремя типами лицензий: базовой, расширенной и неограниченной.</p>
+			</div>
+		</div>
+		<div class="text-home-page">
+			<div class="o-container o-container--medium">
+
+				<p class="c-paragraph"><b>В рамках базовой лицензии пользователи получаю скрипт с открытым кодом и возможность получения обновлений в течение года. Расширенная лицензия позволяет снять копирайт с пользовательской части и дает все возможности движка, включая дополнительную службу поддержки скрипта. На неограниченной лицензии вы получаете новые версии бесплатно на протяжении всего времени использования скрипта.</b></p>	
+				
+				
+
+				<p><a name="part1"></a></p>
+				<h2>Удобство использования</h2> 
+				<p class="c-paragraph">DLE редко встречается в списке приложений, доступных для быстрой установки на хостинге. Поэтому, скорее всего, устанавливать скрипт придётся вручную. Но это не проблема. DataLife Engine устанавливается так же, как WordPress или Joomla — нужно лишь скачать архив с файлами CMS, распаковать его, а содержимое залить на сервер через FTP или файловый менеджер.</p>
+
+				<p><a href="img/dle1.jpg" target="_blank">
+			        <img src="img/dle1.jpg" class="img-wrapper" alt="Редактор ролей пользователей в WordPress"></a>
+			    </p>
+
+				<p class="c-paragraph">В стандартной конфигурации DLE предлагает базовый набор инструментов для управления статьями, комментариями, выставления оценок, проведения опросов. Редактор для добавления контента очень удобный, можно работать с ним в визуальном режиме или переключиться на классический вид для правки HTML.</p>	
+				<p class="c-paragraph">Статические страницы создаются так же, как отдельные материалы, что сильно упрощает процесс наполнения сайта. Для навигации используется система категорий, которая настраивается через панель администратора.</p>	
+				<p class="c-paragraph">Для расширения базовой функциональности предназначены модули. С их помощью можно добавить на сайт продвинутый поиск, блоки с рекомендациями и популярными материалами, инструменты для работы с рейтингом постов и пользователей, а также другие функции, которые часто встречаются на развлекательных порталах.</p>	
+
+			</div>
+		</div>
+
+		<div class="text-home-page">
+			<div class="o-container o-container--medium">
+				<p><a name="part2"></a></p>
+				<h2>Затраты на создание сайта</h2>
+				<p class="c-paragraph">DataLife Engine — коммерческая CMS. Вам нужно купить одну из трёх лицензий, о которых мы уже говорили выше:</p>	
+				<ol class="bullet2">
+					<li>Базовая — 3990 рублей.</li>
+					<li>Расширенная — 4990 рублей.</li>
+					<li>Неограниченная — 10 990 рублей.</li>
+				</ol>
+				<p class="c-paragraph">Ключевой момент — получение обновлений и новых версий системы. На неограниченной лицензии вы будете получать их всегда. На базовой и расширенной — только в течение года. Затем нужно продлить лицензию, заплатив ещё 2990 рублей за год.</p>	
+				<p class="c-paragraph">Чтобы убедиться в разумности таких трат, можно попробовать демо-версию DLE. В ней нельзя редактировать исходный код, стоят ограничения на количество новостей (не более 100) и комментариев (не более 200), нет обновлений и технической поддержки.</p>	
+			</div>
+		</div>
+
+		<div class="text-home-page">
+			<div class="o-container o-container--medium">
+				<p><a name="part3"></a></p>
+				<h2>Достоинства и недостатки</h2>	
+				<p class="c-paragraph">Изначально предназначением CMS DLE было управление информационными ресурсами – отсюда широкие возможности комментирования, оценки, голосований, рейтингов и других атрибутов новостных порталов. Но время и конкуренция изменили назначение – теперь DLE обычно используется для создания развлекательных веб-ресурсов. Среди торрент-трекеры, онлайн-кинотеатры, игровые сайты и т.д. Информационные порталы тоже встречаются, но не намного чаще, чем на Joomla или Drupal, так что неуместно говорить о какой-то узкой специализации системы.</p>	
+				<p class="c-paragraph">Основным преимуществом DLE является её «легкость». Если правильно настроить систему, то можно даже на скромных ресурсах хостинга создать крупный проект, который будет давать небольшую нагрузку на сервер.</p>	
+				<p class="c-paragraph">Еще один плюс – код системы изначально оптимизирован под поисковые системы. Без дополнительных плагинов и долгих настроек прописываются нормальные URL и мета-теги страниц, что ускоряет работу поисковых машин.</p>	
+				<p class="c-paragraph">Главной претензией к DLE является подверженность этой системы взломам. По статистике Яндекса за 2011 год, почти половина всех зараженных сайтов из топ-10000 работают на CMS DLE. Исследование безопасности CMS в 2014 году показало, что каждый 20-й сайт, сделанный на DLE, попадает в черные списки.</p>	
+				<p class="c-paragraph">Пугает и процентное соотношение: почти треть зараженных сайтов работают на DLE (29,2%). Ужасный результат, если учесть, что пользователи платят за эту систему деньги, сопоставимые с годовой лицензией антивируса Касперского для 5 устройств. Понятно, что у любой CMS есть уязвимости – но в случае с DLE складывается ощущение, что команда разработчиков вообще игнорирует вопросы безопасности.</p>	
+				<p class="c-paragraph">Ощущение неверное: уязвимости обнаруживаются, разработчики выпускают патчи и предлагают обновить систему. Проблема в том, что обновление возможно только при наличии лицензии. Когда лицензия заканчивается, владелец сайта может дальше использовать DLE, но обновления он получать не будет. В результате все уязвимости остаются неприкрытыми, а система превращается в решето. Этим обусловлена статистика зараженных сайтов, в которой не отражается количество лицензионных и нелицензионных версий DLE.</p>	
+
+				<p><a href="img/dle2.jpg" target="_blank">
+			        <img src="img/dle2.jpg" class="img-wrapper" alt="Редактор ролей пользователей в WordPress"></a>
+			    </p>
+
+			    <p class="c-paragraph">Еще одним недостатком является трудная для новичков процедура обновления движка. В некоторые файлы шаблона приходится вручную вносить корректировки.</p>	
+			</div>
+		</div>
+
+		<div class="text-home-page">
+			<div class="o-container o-container--medium">
+				<p><a name="part4"></a></p>
+				<h2>Вывод</h2>
+				<p class="c-paragraph">DLE – хорошее решение для создания развлекательного или новостного портала при соблюдении двух условий: вы будете продлять лицензию и постоянно обновлять движок. Если вы ищете бесплатное решение, то категорически не рекомендуется использовать ломанную систему или работать на старой версии – так вы рискуете отправить сайт в компанию к атакованным и зараженным порталам.</p>	
+				<p class="c-paragraph">Начинающим веб-мастерам в этой системе делать нечего; обучение лучше начинать на бесплатных движках или конструкторах сайтов, а эта CMS с первого взгляда может напугать, сформировав неправильное представление о сложности создания и администрирования сайта.</p>	
+			</div>
+		</div>
+	</main>
+ 
+	<footer class="footer">
+		<p>nik1forowap@yandex.ru</p>
+		<p>All rights reserved. 2022</p>
+	</footer>
+
+	<script>
+		function openRightMenu() {
+		  document.getElementById("rightMenu").style.display = "block";
+		}
+
+		function closeRightMenu() {
+		  document.getElementById("rightMenu").style.display = "none";
+		}
+	</script>
+
+	<script>
+		var modal = document.getElementById('myModal');
+		var img = document.getElementById('myImg');
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		img.onclick = function(){
+		    modal.style.display = "block";
+		    modalImg.src = this.src;
+		    captionText.innerHTML = this.alt;
+		}
+		var span = document.getElementsByClassName("close")[0];
+		span.onclick = function() {
+		  	modal.style.display = "none";
+		}
+	</script>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+	    crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+	<script>
+	    $(".gallery-list").magnificPopup({
+	      delegate: "a",
+	      type: "image",
+	      gallery: {
+	        enabled: true
+	      }
+	    });
+	</script>
+</body>
+</html>

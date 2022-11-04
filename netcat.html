@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NetCat</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://unpkg.com/@blaze/css@12.0.0/dist/blaze/blaze.css">
+	<script type="module" src="https://unpkg.com/@blaze/atoms@12.0.0/dist/blaze-atoms/blaze-atoms.esm.js"></script>
+	<script nomodule="" src="https://unpkg.com/@blaze/atoms@12.0.0/dist/blaze-atoms/blaze-atoms.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+	<style>
+		@font-face {
+			font-family: 'Durik';
+			src: url('durik-Regular.woff2') format('woff2'), url('durik-Regular.woff') format('woff');
+			font-weight: 400;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'LIBRARY 3 AM';
+			src: url('fonts/LIBRARY3AM.woff2') format('woff2'), url('fonts/LIBRARY3AM.woff') format('woff');
+			font-weight: 400;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Monitorica';
+			src: url('fonts/Monitorica.woff2') format('woff2'), url('fonts/Monitorica.woff') format('woff');
+			font-weight: 400;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'MADE Evolve Sans EVO';
+			src: url('fonts/MADEEvolveSansEVO-Thin.woff2') format('woff2'), url('fonts/MADEEvolveSansEVO-Thin.woff') format('woff');
+			font-weight: 200;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'TM Vinograd Filled';
+			src: url('fonts/TMVinograd-Filled.woff2') format('woff2'), url('fonts/TMVinograd-Filled.woff') format('woff');
+			font-weight: 400;
+			font-style: normal;
+		}
+
+	</style>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+	<header>
+
+		<div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0;background: #050f13;color: white;font-family: 'Monitorica', sans-serif; width: 300px; font-size: 20px; border-color: skyblue; border-left-width: 3px;" id="rightMenu">
+		  	<button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">Закрыть <i class="fa-solid fa-arrow-right"></i></button>
+		  	<button role="menuitem" class="c-card__control"><a href="onec.html">1C:Битрикс</a></button>
+		  	<button role="menuitem" class="c-card__control"><a href="umicms.html">Umi.CMS</a></button>
+		  	<blaze-accordion>
+				<blaze-accordion-pane header="NetCat" class="c-card__control c-card__control--active c-card-item-background">
+					<p><a href="#part1">Удобство использования</a></p>
+					<p><a href="#part2">Тарифы</a></p>
+					<p><a href="#part3">Преимущества и недостатки</a></p>
+					<p><a href="#part4">Вывод</a></p>
+			  	</blaze-accordion-pane>
+			</blaze-accordion>
+			<button role="menuitem" class="c-card__control"><a href="dle.html">DLE</a></button>
+		  	
+		</div>
+
+		<div class="w3-teal">
+		  	<button class="sticky w3-button w3-teal w3-xlarge w3-right" onclick="openRightMenu()"><i class="fa-solid fa-bars"></i>
+			</button>
+		</div>
+
+		<div class="logo">
+			<a href="index.html"><img class="img_logo" src="img/cms2.png" widht="355" height="99" alt=""></a>
+		</div>
+
+	</header>
+
+	<nav>
+	    <ul class="topmenu">
+	        <li><a href="index.html">Что такое CMS?</a></li>
+	    	<li><a href="free.html">Бесплатные</a>
+	       		<ul class="submenu">
+				    <li><a href="wordpress.html">WordPress</a></li>
+				    <li><a href="joomla.html">Joomla</a></li>
+				    <li><a href="opencart.html">OpenCart</a></li>
+				    <li><a href="drupal.html">Drupal</a></li>
+				</ul>
+	    	</li>
+		    <li><a href="pay.html">Платные</a>
+		     	<ul class="submenu">
+		    		<li><a href="onec.html">1C: Битрикс</a></li>
+		     		<li><a href="umicms.html">Umi.CMS</a></li>
+				    <li><a href="netcat.html">NetCat</a></li>
+				    <li><a href="dle.html">DLE</a></li>
+		     	</ul>
+	    	</li>
+	    </ul>
+	</nav>
+
+	<main>
+		<blaze-back-to-top position="center">
+		 	<button class="c-button c-button--info">Наверх</button>
+		</blaze-back-to-top>		
+
+		<div class="start">
+			<div class="o-container o-container--medium">
+				<p class="c-paragraph"><a href="https://netcat.ru/">NetCat</a> — коммерческая система управления сайтом, основной целевой аудиторией которой являются владельцы интернет-магазинов.</p>
+			</div>
+		</div>
+		<div class="text-home-page">
+			<div class="o-container o-container--medium">
+				<p><a name="part1"></a></p>
+				<h2>Удобство использования</h2> 
+				<p class="c-paragraph">Основная задача, которая ставилась при создании <a href="https://netcat.ru/">CMS NetCat</a> – обеспечить максимальный комфорт в использовании движка как опытным пользователям, так и тем, кто впервые с ними столкнулся. Панель управления сайтом предоставляет доступ ко всем основным функциям.</p>	
+
+				<p><a href="img/netcat1.jpg" target="_blank">
+			        <img src="img/netcat1.jpg" class="img-wrapper" alt="Редактор ролей пользователей в WordPress"></a>
+			    </p>
+
+			    <p class="c-paragraph">Каждая страница настраивается при помощи визуального редактора, но если же пользователю необходимо реализовать какие-то специфические функции, он может воспользоваться подробной документацией, которую любезно предоставляют разработчики движка.</p>
+
+			    <p><a href="img/netcat2.jpg" target="_blank">
+			        <img src="img/netcat2.jpg" class="img-wrapper" alt="Редактор ролей пользователей в WordPress"></a>
+			    </p>
+
+				<p class="c-paragraph">Компания активно сотрудничает со множеством фирм, которые предоставляют расширения, дополнительные модули и реализуют необходимый функционал. То есть, даже если пользователь изначально имеет нулевые знания, он может легко обратиться к официальным партнерам, которые с легкостью запустят даже самые сложные по структуре проекты. Если же вам ничего сверхъестественного не нужно, тогда можно смело воспользоваться встроенным конструктором лэндингов. </p>
+			</div>
+		</div>
+
+		<div class="text-home-page">
+			<div class="o-container o-container--medium">
+				<p><a name="part2"></a></p>
+				<h2>Тарифы</h2>
+				<p class="c-paragraph">Одна из слабых сторон NetCat – это стоимость движка. Хотя компания-разработчик подготовила множество предложения для самых разных категорий пользователей, минимальная стоимость все же может показаться слегка завышенной. В минимальном пакете вы получите стандартный функционал, который включает в себя:</p>
+				<ol class="border">
+					<li>базовый модуль;</li>
+					<li>контур безопасности;</li>
+					<li>поиск по сайту;</li>
+					<li>конструктор лэндингов;</li>
+					<li>статистику посещений;</li>
+					<li>файловый менеджер;</li>
+					<li>функцию кэширования;</li>
+					<li>календарь;</li>
+					<li>маршрутизацию.</li>
+				</ol>	
+				<p class="c-paragraph">При этом даже отсутствует функция личного кабинета, не говоря уже о возможности комментирования продуктов. Кстати, магазин в минимальном тарифе создать продающую или промо-страницу предоставляют минимального шаблона. Более-менее нормальный интернет-магазин можно создать после покупки редакции Business. Здесь вы сразу получите возможность импорта и экспорта товаров, сможете принимать платежи, а также подписывать покупателей на рассылки, чтобы держать их в курсе всех происходящих событий. Для реализации серьезных магазинов с интеграцией с МойСклад или 1С придется приобретать редакции E-Commerce и Extra. Разница между ними заключается в возможности голосования и наличии форума в последнем.</p>	
+				<p><a href="img/netcat3.jpg" target="_blank">
+			        <img src="img/netcat3.jpg" class="img-wrapper" alt="Редактор ролей пользователей в WordPress"></a>
+			    </p>
+
+				<p class="c-paragraph">Для создания магазина, например небольшой компании, которая занимается реализацией собственной продукции, будет достаточно и пакета Standart или Standart+, но здесь придется дополнительно вложиться в создание наполнения сайта, а стоит это в настоящий момент недешево.</p>	
+			</div>
+		</div>
+
+		<div class="text-home-page">
+			<div class="o-container o-container--medium">
+				<p><a name="part3"></a></p>
+				<h2>Достоинства и недостатки</h2>
+
+				<p class="c-paragraph">CMS NetCat обладает большим перечнем положительных сторон. К ним относятся:</p>	
+				
+				<ol class="bullet">
+					<li>нетребовательность к хостингу — система совершенно неприхотлива к поставщику услуг, так как имеет небольшие требования, которые способен удовлетворить даже самый дешевый хостинг;</li>
+					<li>большой выбор партнеров — зарегистрированные партнеры помогут пользователям полностью поднять готовый магазин, не говоря уже о создании отдельных модулей;</li>
+					<li>высокий уровень поддержки — вам не нужно ждать сутками ответа от технических специалистов или копаться на форумах в поисках решения проблемы, обратная связь доступна прямо в панели управления;</li>
+					<li>возможность интеграции с 1С;</li>
+					<li>можно поднять несколько ресурсов на одной лицензии;</li>
+					<li>простой и понятный интерфейс.</li>
+				</ol>
+				<p class="c-paragraph">Несмотря на обилие преимуществ, NetCat также имеет и ряд недостатков, среди которых необходимо отметить:</p>	
+				<ol class="bullet">
+					<li>интеграция с 1С может занять некоторое время и повлечь за собой дополнительные затраты на услуги специалистов, особенно если вы работаете с несколькими электронными платежными системами;</li>
+					<li>при большом количестве посещений ресурса возникает повышенная нагрузка на серверы, которую нельзя сопоставить с конкурентными продуктами;</li>
+					<li>высокая стоимость базовой редакции, не говоря уже о продвинутых.</li>
+				</ol>
+			</div>
+		</div>
+
+		<div class="text-home-page">
+			<div class="o-container o-container--medium">
+				<p><a name="part4"></a></p>
+				<h2>Вывод</h2>
+				<p class="c-paragraph">CMS NetCat изначально создавался для обычных людей, а не WEB-разработчиков. Пользоваться системой легко, даже если вы не имеете специфических знаний, но при создании серьезных проектов, без определенных навыков все равно ничего не получится.</p>		
+			</div>
+		</div>
+	</main>
+ 
+	<footer class="footer">
+		<p>nik1forowap@yandex.ru</p>
+		<p>All rights reserved. 2022</p>
+	</footer>
+
+	<script>
+		function openRightMenu() {
+		  document.getElementById("rightMenu").style.display = "block";
+		}
+
+		function closeRightMenu() {
+		  document.getElementById("rightMenu").style.display = "none";
+		}
+	</script>
+
+	<script>
+		var modal = document.getElementById('myModal');
+		var img = document.getElementById('myImg');
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		img.onclick = function(){
+		    modal.style.display = "block";
+		    modalImg.src = this.src;
+		    captionText.innerHTML = this.alt;
+		}
+		var span = document.getElementsByClassName("close")[0];
+		span.onclick = function() {
+		  	modal.style.display = "none";
+		}
+	</script>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+	    crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+	<script>
+	    $(".gallery-list").magnificPopup({
+	      delegate: "a",
+	      type: "image",
+	      gallery: {
+	        enabled: true
+	      }
+	    });
+	</script>
+</body>
+</html>

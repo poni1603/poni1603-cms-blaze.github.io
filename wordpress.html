@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WordPress</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://unpkg.com/@blaze/css@12.0.0/dist/blaze/blaze.css">
+	<script type="module" src="https://unpkg.com/@blaze/atoms@12.0.0/dist/blaze-atoms/blaze-atoms.esm.js"></script>
+	<script nomodule="" src="https://unpkg.com/@blaze/atoms@12.0.0/dist/blaze-atoms/blaze-atoms.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+	<style>
+		@font-face {
+			font-family: 'Durik';
+			src: url('durik-Regular.woff2') format('woff2'), url('durik-Regular.woff') format('woff');
+			font-weight: 400;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'LIBRARY 3 AM';
+			src: url('fonts/LIBRARY3AM.woff2') format('woff2'), url('fonts/LIBRARY3AM.woff') format('woff');
+			font-weight: 400;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Monitorica';
+			src: url('fonts/Monitorica.woff2') format('woff2'), url('fonts/Monitorica.woff') format('woff');
+			font-weight: 400;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'MADE Evolve Sans EVO';
+			src: url('fonts/MADEEvolveSansEVO-Thin.woff2') format('woff2'), url('fonts/MADEEvolveSansEVO-Thin.woff') format('woff');
+			font-weight: 200;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'TM Vinograd Filled';
+			src: url('fonts/TMVinograd-Filled.woff2') format('woff2'), url('fonts/TMVinograd-Filled.woff') format('woff');
+			font-weight: 400;
+			font-style: normal;
+		}
+
+	</style>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+	<header>
+
+		<div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0;background: #050f13;color: white;font-family: 'Monitorica', sans-serif; width: 300px; font-size: 20px; border-color: skyblue; border-left-width: 3px;" id="rightMenu">
+		  	<button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">Закрыть <i class="fa-solid fa-arrow-right"></i></button>
+		  	<blaze-accordion>
+				<blaze-accordion-pane header="WordPress" class="c-card__control c-card__control--active c-card-item-background">
+					<p><a href="#part1">Виды веб-сайтов</a></p>
+					<p><a href="#part2">Плюсы и минусы</a></p>
+					<p><a href="#part3">Установка</a></p>
+					<p><a href="#part4">Кто использует?</a></p>
+					<p><a href="#part5">Почему именно WordPress?</a></p>
+					<p><a href="#part6">Вывод</a></p>
+			  	</blaze-accordion-pane>
+			</blaze-accordion>
+			<button role="menuitem" class="c-card__control"><a href="joomla.html">Joomla</a></button>
+			<button role="menuitem" class="c-card__control"><a href="opencart.html">OpenCart</a></button>
+		  	<button role="menuitem" class="c-card__control"><a href="drupal.html">Drupal</a></button>
+		</div>
+
+		<div class="w3-teal">
+		  	<button class="sticky w3-button w3-teal w3-xlarge w3-right" onclick="openRightMenu()"><i class="fa-solid fa-bars"></i>
+			</button>
+		</div>
+
+		<div class="logo">
+			<a href="index.html"><img class="img_logo" src="img/cms2.png" widht="355" height="99" alt=""></a>
+		</div>
+
+	</header>
+
+	<nav>
+	    <ul class="topmenu">
+	        <li><a href="index.html">Что такое CMS?</a></li>
+	    	<li><a href="free.html">Бесплатные</a>
+	       		<ul class="submenu">
+				    <li><a href="wordpress.html">WordPress</a></li>
+				    <li><a href="joomla.html">Joomla</a></li>
+				    <li><a href="opencart.html">OpenCart</a></li>
+				    <li><a href="drupal.html">Drupal</a></li>
+				</ul>
+	    	</li>
+		    <li><a href="pay.html">Платные</a>
+		     	<ul class="submenu">
+		    		<li><a href="onec.html">1C: Битрикс</a></li>
+		     		<li><a href="umicms.html">Umi.CMS</a></li>
+				    <li><a href="netcat.html">NetCat</a></li>
+				    <li><a href="dle.html">DLE</a></li>
+		     	</ul>
+	    	</li>
+	    </ul>
+	</nav>
+
+	<main>
+		<blaze-back-to-top position="center">
+		 	<button class="c-button c-button--info">Наверх</button>
+		</blaze-back-to-top>		
+
+		<div class="start">
+			<div class="o-container o-container--medium">
+				<p class="c-paragraph"><a href="https://ru.wordpress.org/">WordPress</a> — это самый простой и популярный способ создать собственный веб-сайт или блог.</p>
+			</div>
+		</div>
+		<div class="text-home-page">
+			<div class="o-container o-container--medium">
+				
+				<p class="c-paragraph">Фактически, WordPress поддерживает более 43,3% всех веб-сайтов в Интернете. Да, более чем каждый четвертый веб-сайт, который вы посещаете, вероятно, работает на WordPress.
+				</p>
+				<p class="c-paragraph">На чуть более техническом уровне WordPress — это система управления контентом с открытым исходным кодом, лицензированная под лицензией GPLv2, что означает, что любой может бесплатно использовать или модифицировать программное обеспечение WordPress.
+				</p>
+
+				<p><a name="part1"></a></p>
+				<h2>Какие виды веб-сайтов может сделать WordPress?</h2> 
+				<p class="c-paragraph">Много лет назад WordPress был в первую очередь инструментом для создания блога, а не более традиционных веб-сайтов. Однако это уже давно не соответствует действительности. В настоящее время, благодаря изменениям в основном коде, а также обширной экосистеме плагинов и тем WordPress, <b>вы можете создать любой тип веб-сайта с помощью WordPress</b>.
+				</p>
+				<p class="c-paragraph">Например, WordPress не только поддерживает огромное количество бизнес-сайтов и блогов, но и являетсясамым популярным способом создания магазина электронной коммерции! С помощью WordPress вы можете создавать:
+				</p>
+			</div>
+			<ol class="border">
+			    <li>Бизнес-сайты</li>
+			    <li>Магазины электронной коммерции</li>
+			    <li>Блоги</li>
+			    <li>Портфолио</li>
+			    <li>Резюме</li>
+			    <li>Форумы</li>
+			    <li>Социальные сети</li>
+			    <li>Членские сайты</li>
+			    <li>…практически все, что вы можете придумать.</li>
+			</ol>
+		</div>
+
+		<div class="text-home-page">
+			<div class="o-container o-container--medium">
+				<p><a name="part2"></a></p>
+				<h2>Плюсы и минусы CMS WordPress</h2>
+				<h3>Плюсы</h3>
+				<ol class="border">
+				    <li>Доступность – использовать движок можно бесплатно.</li>
+				    <li>Обширный каталог дополнительных плагинов, в их разработке активное участие принимает сообщество.</li>
+				    <li>Много обучающих материалов: в сети есть видеоинструкции, аудиокниги и достаточно и другой информации.</li>
+				    <li>Простая установка и обновление до новейшей версии.</li>
+				    <li>Простое администрирование с управлением сайтом справится даже новичок, конечно после обучения хотя бы на базовом уровне.</li>
+				    <li>Редактор Gutenberg, с его помощью удается удобно управлять содержимым сайтом в визуальном режиме. Можно даже не использовать разные плагины, а для отдельных задач подойдет в том числе базовая комплектация.</li>
+				    <li>Компетентное и развитое сообщество.</li>
+				    <li>Интеграция со сторонними ресурсами через плагины.</li>
+				    <li>Регулярнее обновление системы.</li>
+				</ol>
+				<h3>Минусы</h3>
+				<ol class="border">
+				    <li>Перегруз сервера – чем больше расширений, тем вероятнее уменьшение скорости загрузки.</li>
+				    <li>Заспамленность – если установить некачественный модуль с ошибками на сайт будут попадать комментарии со сторонним контентом.</li>
+				    <li>Сложности управления, даже при максимально понятной админке, хостинг, обновления, безопасность – все это ложится на ваши плечи.</li>
+				    <li>Стоимость – за что заплатили, то и получили. Сайт на WordPress не будет полностью бесплатным.</li>
+				    <li>Слишком частое обновление системы, что на самом деле является проблемой, ведь на него тратиться много времени, плюс может все это завершиться ошибкой.</li>
+				    <li>Безопасность сайтов на WordPress вызывает много вопросов. Репутация движка в этом плане не безупречная. Причем даже специализированные модули в полной мере не решают проблему.</li>
+				</ol>
+			</div>
+		</div>
+
+		<div class="text-home-page">
+			<div class="o-container o-container--medium">
+				<p><a name="part3"></a></p>
+				<h2>Как установить CMS WordPress</h2>
+				<p class="c-paragraph">Независимо от выбранного способа установки, инсталляция WordPress займет не больше 10 минут – не сложнее, чем любую другую программу для ПК. Представляем несколько вариантов. Первый из них – использование автоустановщика. Действует так:</p>
+				<ol class="bullet">
+					<li>Найдите хостинг, который поддерживает автоустановку WordPress. Есть много специализированных тарифов, заточенных именно под этот движок.</li>
+					<li>В панели управления найдите раздел «Управление» и строку где указан домен сайта, куда ходите установить WordPress.</li>
+					<li>Перейдите на вкладку MySQL и кликните «Создать базу данных». Придумайте имя и пароль пользователя, наименование самой базы данных и укажите эти данные в соответствующих полях. Нажмите «создать».</li>
+					<li>Далее переходите непосредственно к установке.</li>
+				</ol>
+				<p class="c-paragraph">Этот метод максимально простой, вам не потребуются знания и умение работать с протоколом передачи данных FTP и не придется выполнять какие-либо сложные действия. После установки движка вы получите письмо с авторизационными данными и ссылку на админку.
+				</p>
+				<p class="c-paragraph">Установка WordPress через FTP – это еще один способ инсталляции. Примечание: пример показан для FTP-клиента FileZilla, предположительно сайт уже добавлен. Инструкция:</p>
+
+				<ol class="bullet">
+					<li>Скачайте последнюю версию движка.</li>
+					<li>Распакуйте архив на жесткий диск ПК.</li>
+					<li>Подключитесь к сайту через FTP-клиент. В правом нижнем окне зайдите в корневую директорию сайта, в левом нижнем – в каталог с файлами и папками архива, который вы распаковали. Выделите все файлы и каталоги и, щелкнув правой мышкой, «закачайте на сервер». Если появится сообщение «Файл существует» выберите пункт «перезаписать» и отметьте галочкой «всегда использовать это действие».</li>
+					<li>Во время копирования файлов, создайте базу данных.</li>
+					<li>После указанных действий приступайте к установке WordPress. Вам нужно выбрать домен сайта в браузере, язык и нажать «продолжить».</li>
+					<li>Кликните «вперед», укажите данные БД и впишите IP-сервера, далее нажмите «отправить». Рекомендуется изменить стандартный префикс на набор случайных латинских букв. Далее нажмите «запустить установку».</li>
+					<li>Укажите название сайта, данные для входа в админку и кликните «Установить WordPress».</li>
+				</ol>
+				<p class="c-paragraph">Через 5-10 секунд увидите сообщение, что движок установлен, на email указанный при регистрации получите письмо со ссылкой на страницу входа в админку движка.
+				</p>
+			</div>
+		</div>
+
+		<div class="text-home-page">
+			<div class="o-container o-container--medium">
+				<p><a name="part4"></a></p>
+				<h2>Кто использует WordPress?</h2>
+				<p class="c-paragraph">WordPress используется частными лицами, крупными компаниями и всеми, кто находится между ними! Многие известные организации используют WordPress. Вот некоторые из них:</p>
+				<h3>Whitehouse.gov</h3>
+				<p class="c-paragraph">Официальный сайт <a href="https://www.whitehouse.gov/">Whitehouse.gov</a> работает на WordPress:</p>
+
+				<p><a href="img/wp1.jpg" target="_blank">
+			        <img src="img/wp1.jpg" class="img-wrapper" alt="Сайт Белого дома"></a>
+			    </p>
+
+				<h3>Майкрософт</h3>
+				<p class="c-paragraph">Microsoft использует WordPress для поддержки <a href="https://blogs.microsoft.com/">своего официального блога</a>. Он также использует WordPress для создания блогов для определенных продуктов, таких как Windows и Skype:
+				</p>
+
+				<p><a href="img/wp2.jpg" target="_blank">
+			        <img src="img/wp2.jpg" class="img-wrapper" alt="Сайт Microsoft"></a>
+			    </p>
+
+			    <h3>The Rolling Stones</h3>
+				<p class="c-paragraph">Даже известные группы любят WordPress! <a href="http://www.rollingstones.com/">Сайт The Rolling Stones</a> полностью работает на WordPress:
+				</p>
+
+				<p><a href="img/wp3.png" target="_blank">
+			        <img src="img/wp3.png" class="img-wrapper" alt="Сайт The Rolling Stones"></a>
+			    </p>
+			</div>
+		</div>
+
+		<div class="text-home-page">
+			<div class="o-container o-container--medium">
+				<p><a name="part5"></a></p>
+				<h2>Почему именно WordPress?</h2>
+				<p class="c-paragraph">Популярность WordPress, в первую очередь, обусловлена широчайшими возможностями, которые предоставляет движок. Причины, почему это именно так, следующие:
+				</p>
+				<ol class="border">
+				    <li>открытый код движка, который обеспечивает отличную гибкость системы;</li>
+				    <li>уникальная расширяемость – ее обеспечивают многочисленные бесплатные и платные плагины;</li>
+				    <li>многофункциональность и простота использования.</li>
+				</ol>
+				<p class="c-paragraph">Чтобы создать сайт, нужно совершенно немного усилий, вы будете удивлены насколько это просто. Чтобы расширить возможности достаточно установить необходимый плагин. Что касается опытных разработчиков, то они ценят движок за то, что используется распространенный язык PHP и есть подробная документация, опираясь на которую удастся максимально уникализировать и кастомизировать ресурс.
+				</p>
+				<p class="c-paragraph">Все действия в движке выполняются через административную панель, она содержит такие разделы:</p>
+				<ol class="bullet2">
+				    <li>Консоль – главная страницы, в ней содержится вся информация общего характера о новостях, комментариях, статьях, обновлениях и другие моменты.</li>
+				    <li>Записи – включает статьи, новости, обзоры, другие типы материалов.</li>
+				    <li>Медиафайлы – тут представлены изображения, видео, таблицы и иные файлы, которые загружены через админку.</li>
+				    <li>Страницы – здесь размещается статичная информация. Например, о компании, способах доставки, контактные данные, реклама и т.д.</li>
+				    <li>Комментарии. Увидите комментарии, которые добавляют пользователи к контенту на сайте. У администратора есть возможность корректировать и удалять те, которые содержат недопустимое содержание.</li>
+				    <li>Внешний вид. Это инструмент, используемый для настройки и добавления шаблонов. Устанавливать их можно в любом количестве, а хранить в памяти WordPress.</li>
+				    <li>Плагины. Эти дополнительные инструменты, одна из главных особенностей движка. Именно с их помощью удается расширить функционал и сделать такой сайт, который будет соответствовать поставленным задачам.</li>
+				    <li>Пользователи. Отсюда осуществляется управление правами доступа. Администратор может удалять или добавлять пользователей.</li>
+				    <li>Инструменты – список служебных возможностей, в том числе экспорт и импорт контента.</li>
+				    <li>Настройки. В этом меню вы сможете корректировать основные параметры. Удастся изменить название ресурса, язык, email, формат даты и многое другое.</li>
+				</ol>
+				<p class="c-paragraph">Каждый раздел содержит тематические подразделы, которые также имеют собственные настойки. Админка достаточно компактная и простая в освоении и при этом, с ее помощью удается создавать даже очень крупные проекты.</p>	
+				<p class="c-paragraph">Если владеете в достаточной мере навыками работы с CSS и PHP, то движок WordPress дает возможность редактирования кода. За счет этого сайты на данной CMS поддаются глубокой кастомизации. Можете, к примеру, добавлять виджеты, блоки или при желании менять стандартные комментарии на виджет со стороннего ресурса. Если потребуется внесение серьезных изменений, то лучше выгружать файлы шаблонов с хостинга и проводить корректировку на ПК. Параллельно следует создать резервную копию сайта, что при необходимости гарантирует быстрый возврат к исходным параметрам.</p>	
+				<p class="c-paragraph">Особое внимание следует уделить плагинам – это небольшие скрипты, которые способны добавлять разных функций в любой проект. Официальный каталог WordPress содержит более 57000 бесплатных вариантов, а количество премиум (платных) и сосчитать сложно – каталог постоянно расширяется.</p>	
+				<p class="c-paragraph">Плагины способны решать разные задачи от обеспечения безопасности до усовершенствования удобства использования сайта. Важный момент – перед обновлением системы плагины лучше деактивировать, а потом вновь запустить. Их переустановку осуществлять не придется.</p>	
+				<p class="c-paragraph">При помощи CMS WordPress удастся создать какой угодно сайт, начиная от простого одностраничника и заканчивая огромным интернет-магазином. Будьте готовы, что функционал «из коробки» окажется не таким обширным как хотелось бы, но за счет огромного количества плагинов, сможете реализовать свои задумки. На данный момент существует порядка 30000 расширения для WordPress. При обновлении к очередной версии, расширения не придется переустанавливать – конфликты между версиями возникают редко.</p>	
+				<p class="c-paragraph">Движок предлагает сосредоточиться на том, как будет выглядеть будущий ресурс и каким контентом наполнится. Вам не придется тратить время на настройку конфигурации, а редактировать сайт удастся в режиме реального времени, при этом сразу же сможете оценить, как меняется страница или же отдельная публикация. При этом не нужна корректировка кода.</p>	
+			</div>
+		</div>
+
+		<div class="text-home-page">
+			<div class="o-container o-container--medium">
+				<p><a name="part6"></a></p>
+				<h2>Вывод</h2>
+				<p class="c-paragraph">WordPress – отличный движок для сайтов любого типа и уровня сложности. Даже используя базовый, бесплатный функционал, удастся создать неплохой ресурс. Если прибавить плагины и подобрать один из премиальных шаблонов, то успех вашему проекту практически обеспечен. Удобства добавляет уникальная гибкость и масштабируемость, а также большое количество обучающих материалов (текстовых и видеоинструкций).
+				</p>
+				<p class="c-paragraph">Понимание кода для работы с движком WordPress не обязательно, но определенные навыки помогут достаточно глубоко кастомизировать ресурс. Для тех, кто только начинает свой путь в веб-разработке, придется кстати удобный и интуитивно понятный визуальный редактор.
+				</p>
+				<p class="c-paragraph">WordPress можно уверенно назвать лучшей площадкой для старта. По мере развития проекта можно будет привлекать разработчиков, которые смогут в значительной мере улучшить ресурс.
+				</p>
+			</div>
+		</div>
+
+		<div class="video">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/fYJkGF21m10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</main>
+ 
+	<footer class="footer">
+		<p>nik1forowap@yandex.ru</p>
+		<p>All rights reserved. 2022</p>
+	</footer>
+
+	<script>
+		function openRightMenu() {
+		  document.getElementById("rightMenu").style.display = "block";
+		}
+
+		function closeRightMenu() {
+		  document.getElementById("rightMenu").style.display = "none";
+		}
+	</script>
+
+	<script>
+		var modal = document.getElementById('myModal');
+		var img = document.getElementById('myImg');
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		img.onclick = function(){
+		    modal.style.display = "block";
+		    modalImg.src = this.src;
+		    captionText.innerHTML = this.alt;
+		}
+		var span = document.getElementsByClassName("close")[0];
+		span.onclick = function() {
+		  	modal.style.display = "none";
+		}
+	</script>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+	    crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+	<script>
+	    $(".gallery-list").magnificPopup({
+	      delegate: "a",
+	      type: "image",
+	      gallery: {
+	        enabled: true
+	      }
+	    });
+	</script>
+</body>
+</html>
